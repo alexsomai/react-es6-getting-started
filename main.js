@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import SliderApp from './SliderApp';
+import MountUsageApp from './MountUsageApp';
+import UpdatingApp from './UpdatingApp';
 
 ReactDOM.render(
-  <App />,
+  <div>
+    <SliderApp />
+    <MountUsageApp />
+    <UpdatingApp />
+  </div>,
   document.getElementById('app')
 );

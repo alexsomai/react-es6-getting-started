@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 class App extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      red: 0,
-      green: 0,
-      blue: 0
+      red: 128,
+      green: 128,
+      blue: 128
     }
     this.update = this.update.bind(this)
   }
@@ -22,6 +22,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        <h1>This is a Slider</h1>
         <Slider ref="red" update={this.update} />
         {this.state.red}
         <br />
@@ -30,6 +31,7 @@ class App extends React.Component {
         <br />
         <Slider ref="blue" update={this.update} />
         {this.state.blue}
+        <br />
         <br />
       </div>
     );
