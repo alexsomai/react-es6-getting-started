@@ -6,6 +6,7 @@ import UpdatingApp from './UpdatingApp';
 import HOCApp from './HOCApp';
 import CCApp from './CCApp';
 import DGCApp from './DGCApp';
+import CompilerApp from './CompilerApp';
 
 ReactDOM.render(
   <div>
@@ -14,6 +15,7 @@ ReactDOM.render(
     <UpdatingApp />
     <HOCApp />
     <DGCApp />
+    <CompilerApp />
   </div>,
   document.getElementById('app')
 );
