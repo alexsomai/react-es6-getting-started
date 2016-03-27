@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import RaisedButton from 'material-ui/lib/raised-button';
+import Checkbox from 'material-ui/lib/checkbox';
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+// injectTapEventPlugin();
 class App extends React.Component {
 
   constructor(){
@@ -51,8 +55,9 @@ class Wrapper extends React.Component {
     return (
       <div>
         <h1>Mount Usage</h1>
-        <button onClick={this.mount.bind(this)}>Mount</button>
-        <button onClick={this.unmount.bind(this)}>Unmount</button>
+        <Checkbox label="Simple" />
+        <RaisedButton primary={true} color="primary" label="Mount" onClick={this.mount.bind(this)}/>
+        <RaisedButton secondary={true} label="Unmount" onClick={this.unmount.bind(this)}/>
         <div id='a'></div>
       </div>
     );
